@@ -1,0 +1,347 @@
+@charset "utf-8";
+/* CSS Document */
+section {
+	color: #505050;
+}
+header {
+	padding: 20px 0px;
+	box-shadow: rgba(0, 0, 0, 0.39) 0px 3px 2px 0px;
+}
+header .logo, header .logo a, header .logo a:hover {
+	font-size: 30px;
+	text-align: left;
+	color: #03A9F4;
+	letter-spacing: 0px;
+	font-family: Arial;
+	text-decoration: none;
+}
+header .navbar-nav li.active a, header .navbar-nav li.active a:hover, header .navbar-nav li a:hover {
+	border-radius: 5px;
+	border-color:#2196F3;
+	border-style: solid;
+	background: #03A9F4;
+	border-width: 1px;
+	color: #fff;
+	word-wrap: break-word;
+	color: rgb(255, 255, 255);
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 0px;
+	font-size: 16px;
+	margin: 0px 5px;
+	
+}
+header .navbar-nav li a {
+	border-radius: 5px;
+	border-color: #fff;
+	border-style: solid;
+	background: #fff;
+	border-width: 1px;
+	color: #fff;
+	word-wrap: break-word;
+	color: #03A9F4;
+	text-align: center;
+	line-height: 1.2;
+	letter-spacing: 0px;
+	font-size: 16px;
+	margin: 0px 5px;
+}
+a.call-logo {
+	margin-left: 15px;
+}
+header .navbar-nav {
+	float: right;
+}
+section.banner-wrapper {
+	background: url(../images/banner.jpg) no-repeat;
+	background-position: 0px center;
+	background-size: cover;
+	padding: 250px 0px;
+	position: relative;
+}
+.banner-text {
+	padding: 25px;
+	width: 600px;
+	position: absolute;
+	    background-color: rgba(3, 169, 244,0.8);
+	z-index: 9;
+	left: 100px;
+	text-align: center;
+	top: 150px;
+}
+.banner-text h2 {
+	color: #fff;
+	text-align: center;
+	margin-top: 0px;
+}
+.banner-text p {
+	color: rgb(255, 255, 255);
+	font-size: 16px;
+	text-align: center;
+}
+a.banner-logo, a.banner-logo:hover {
+	background-color: rgb(255, 144, 0);
+    border-radius: 50px;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 10px 30px;
+    font-size: 24px;
+    text-decoration: none;
+    color: #fff;
+}
+section.first-sec {
+	background: url(../images/girls-image.jpg) no-repeat;
+	background-position: top center;
+	background-size: cover;
+	height: 360px;
+	position: relative;
+}
+section.first-sec p {
+	font-size: 16px;
+	line-height: 22px;
+}
+section.first-sec h3 {
+	margin-top: 32px;
+}
+.bg-theme {
+	    background-color: rgba(3, 169, 244,0.8);
+	color: #fff;
+	width: 100%;
+	height: 100%;
+	padding: 30px;
+	text-align: center;
+	transition: all 500ms ease-out;
+}
+.bg-theme h3 {
+	font-size: 30px;
+	line-height: 30px;
+	color: #fff;
+	position: relative;
+	top: 80px;
+}
+.bg-theme p {
+	font-size: 16px;
+	line-height: 22px;
+	color: #fff;
+	opacity: 0;
+}
+.bg-theme:hover p.para-show {
+	opacity: 1;
+	transition: all 500ms ease-out;
+}
+.bg-theme:hover h3.heading-show {
+	opacity: 0;
+	transition: all 500ms ease-out;
+}
+.tiles-1 {
+	background: url(../images/tile-1.jpg) no-repeat;
+	background-position: 0px center;
+	background-size: cover;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+.tiles-2 {
+	background: url(../images/tile-2.jpg) no-repeat;
+	background-position: 0px center;
+	background-size: cover;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+.tiles-3 {
+	background: url(../images/tile-3.jpg) no-repeat;
+	background-position: 0px center;
+	background-size: cover;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+.tiles-4 {
+	background: url(../images/tile-4.jpg) no-repeat;
+	background-position: 0px center;
+	background-size: cover;
+	height: 300px;
+	padding: 0;
+	margin: 0;
+}
+section.third-sec {
+	padding: 30px 0px;
+	text-align: center;
+}
+section.second-sec {
+	overflow: hidden;
+}
+.four-sec {
+	padding: 20px 0px;
+	text-align: center;
+	background: #03A9F4;
+	color: #fff;
+}
+.four-sec h2, .eight-sec h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 36px;
+}
+.four-sec p {
+	font-size: 18px;
+	padding: 0;
+	margin: 0;
+}
+.eight-sec p {
+	font-size: 18px;
+	padding: 10px 0px;
+	margin: 0;
+}
+.fifth-sec {
+	padding: 20px 0px;
+	background: #fff;
+}
+section.six-sec {
+	padding: 20px 0px;
+}
+section.seven-sec {
+	padding: 20px 0px;
+}
+section.seven-sec h4 {
+	line-height: 24px;
+}
+section.seven-sec h5 {
+	font-size: 18px;
+	color: #505050;
+	font-weight: 600;
+}
+ul.bullet-list {
+	list-style: disc;
+	margin: 0;
+	padding: 0px 25px;
+	font-size: 18px;
+}
+section.eight-sec {
+	padding: 40px 0px;
+	text-align: center;
+	background: #03A9F4;
+	color: #fff;
+}
+section.eight-sec label {
+	display: block;
+	padding: 0px 0px 5px;
+	margin: 0;
+	color: #fff;
+	font-size: 16px;
+	text-align: left;
+	font-weight: normal;
+}
+section.eight-sec input.form-text {
+	width: 100%;
+	height: 42px;
+	line-height: 42px;
+	border: 1px solid #ccc;
+	color: #505050;
+	padding: 0px 5px;
+}
+section.eight-sec input.form-button {
+	background: transparent;
+	border: 1px solid #ccc;
+	padding: 10px 40px;
+	margin: 25px 0px 0px;
+	font-size: 16px;
+}
+section.eight-sec h4 {
+	margin: 25px 0px 0px 0px;
+	text-align: center;
+	line-height: 24px;
+}
+section.eight-sec h4 a {
+	text-decoration: underline;
+	color: #fff;
+}
+footer {
+	background: rgb(51, 51, 51);
+	color: #fff;
+	padding: 10px 0px;
+}
+p.desclaimer {
+	font-size: 12px;
+	line-height: 18px;
+	color: #fff;
+}
+.copyright-section a {
+	text-decoration: none;
+	color: #03A9F4;
+	font-size: 12px;
+}
+.copyright-section a:hover, .copyright-section a:active, .copyright-section a:visited {
+	text-decoration: none;
+}
+.privacy-wrapper p {
+	text-align: justify;
+}
+.privacy-wrapper {
+	margin-top: 10px;
+}
+footer p {
+	margin: 0;
+	padding: 0;
+}
+.tollfree {
+	display: none;
+}
+
+@media only screen and (max-width: 1200px) {
+header .logo, header .logo a, header .logo a:hover {
+	font-size: 26px;
+	text-align: left;
+	color: #03A9F4;
+	letter-spacing: 0px;
+	font-family: Arial;
+	text-decoration: none;
+}
+}
+
+@media only screen and (max-width: 768px) {
+header div.col-sm-8 {
+	display: none;
+}
+.banner-text {
+	padding: 25px;
+	width: 100%;
+	position: absolute;
+	background-color: rgba(0, 140, 158, 0.75);
+	z-index: 9;
+	left: 0;
+	right: 0;
+	text-align: center;
+	top: 50px;
+	margin: 0 auto;
+}
+header .logo, header .logo a, header .logo a:hover {
+	font-size: 24px;
+	text-align: center;
+	color: #03A9F4;
+	letter-spacing: 0px;
+	font-family: Arial;
+	text-decoration: none;
+}
+.tollfree {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	position: fixed;
+	bottom: 0;
+	z-index: 9;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 140, 158, 0.75);
+	font-size: 30px;
+	text-align: center;
+	border-radius: 4px;
+}
+.tollfree a {
+	color: #fff;
+	text-decoration: none;
+}
+footer {
+	padding-bottom: 50px;
+}
+}

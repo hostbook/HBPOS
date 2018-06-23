@@ -1,0 +1,26 @@
+<h1>My Application name is {{title}}</h1>
+<input type="button" value="click" (click)=test()>
+  <ul>
+    <li *ngFor="let item of courses">
+      {{item}}
+    </li>
+  </ul>
+  <input type="text" [(ngModel)]="title">
+  <table border=1>
+    <tr>
+      <th>S.No</th>
+      <th>Name</th>
+      <th>Age</th>
+      <th>City</th>
+    </tr>
+    <tr *ngFor="let item of jData; let i=index">
+      <td>{{i+1}}</td>
+      <td>{{item.name|uppercase}}</td>
+      <td>{{item.age}}</td>
+      <td>{{item.city|titlecase}}</td>
+    </tr>
+  </table>
+  <ng-template #error>
+    Data note found
+  </ng-template>
+

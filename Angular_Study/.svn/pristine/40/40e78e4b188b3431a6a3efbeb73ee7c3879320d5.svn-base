@@ -1,0 +1,904 @@
+@font-face {
+	font-family: 'latolight';
+	src: url('../fonts/lato-light-webfont.eot');
+	src: url('../fonts/lato-light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-light-webfont.woff2') format('woff2'), url('../fonts/lato-light-webfont.woff') format('woff'), url('../fonts/lato-light-webfont.ttf') format('truetype'), url('../fonts/lato-light-webfont.svg#latolight') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'latobold';
+	src: url('../fonts/lato-bold-webfont.eot');
+	src: url('../fonts/lato-bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/lato-bold-webfont.woff2') format('woff2'), url('../fonts/lato-bold-webfont.woff') format('woff'), url('../fonts/lato-bold-webfont.ttf') format('truetype'), url('../fonts/lato-bold-webfont.svg#latobold') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Geogrotesque Rg';
+	src: url('../fonts/Geogrotesque-Regular.eot');
+	src: url('../fonts/Geogrotesque-Regular.eot?#iefix') format('embedded-opentype'), url('../fonts/Geogrotesque-Regular.woff') format('woff'), url('../fonts/Geogrotesque-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+.tollfree-number {
+	position: fixed;
+	z-index: 999999;
+	bottom: 0px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	text-align: center;
+	display: none;
+	width: 96%;
+	background: #1b1b1b;
+	padding: 2px 0px;
+	border-radius: 4px;
+	font-size: 20px;
+	color: #fff;
+	box-shadow: 0px 0px 2px #656565;
+}
+.tollfree-number a {
+	font-size: 24px;
+	color: rgb(255,255,255);
+	letter-spacing: 1px;
+}
+.tollfree-number a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, p, a, div, .h3, ul, li, span {
+	font-family: 'Geogrotesque Rg' !important;
+}
+.testimonial h5 {
+	font-weight: bold;
+}
+.banner-strip {
+	background: #393a3d;
+	color: #fff;
+}
+.banner-strip h3 {
+	padding: 10px 0px;
+	margin: 0;
+	font-family: 'Geogrotesque Rg';
+	font-weight: normal;
+}
+.call-now-header {
+	margin-top: 12px;
+}
+.top-20 a img {
+	width: 36px;
+	padding-top: 5px;
+}
+.menu-wrapper a {
+	color: #000;
+	text-decoration: none;
+	margin: 0px 8px;
+	font-size: 18px;
+	transition: all 300ms ease-out;
+}
+.menu-wrapper {
+	text-align: right;
+}
+.menu-wrapper, .login-wrapper {
+	padding-top: 10px;
+}
+.login-wrapper a {
+	color: #000;
+	text-decoration: none;
+}
+.strip-login {
+	color: #fff;
+	padding: 3px;
+	background: #393a3d;
+	text-align: center;
+}
+.strip-login a {
+	color: #fff;
+	transition: all 300ms ease-out;
+}
+.strip-login a:hover, .menu-wrapper a:hover {
+	color: rgb(90, 179, 51);
+	text-decoration: none;
+}
+.call-now-header a {
+	font-size: 16px;
+	text-decoration: none;
+}
+.logo_left a img {
+	width: 50px;
+}
+.toll_free_banner {
+	display: none !important;
+}
+.hostbooks-plan h4 {
+	color: #2ca01c;
+}
+.hostbooks-plan h1 {
+	padding: 0;
+	margin: 15px 0px;
+}
+.srv-det-list {
+	list-style: none;
+	font-size: 15px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	padding-left: 0px;
+}
+.srv-det-list li {
+	line-height: 1.8;
+	color: #000;
+}
+.srv-det-list li:before {
+	content: "\f00c"; /* FontAwesome Unicode */
+	font-family: FontAwesome;
+	margin-right: 10px;
+	position: relative;
+	left: 0px;
+	color: #2ca01c
+}
+.side-bar .test-right h3 {
+	font-size: 16px;
+	padding: 0;
+	color: #2ca01c;
+	text-align: center;
+	background: transparent;
+}
+.side-bar h3 {
+	margin: 0;
+	padding: 6px 0px;
+	background: #2ca01c;
+	text-align: center;
+	font-size: 18px;
+	color: #fff;
+}
+.side-bar a, .side-bar a:hover {
+	color: #2ca01c;
+	text-decoration: none;
+	font-size: 18px;
+}
+.side-bar a i {
+	margin-right: 5px;
+	font-size: 24px;
+	position: relative;
+	top: 5px;
+}
+.side-bar p {
+	margin: 15px 0px;
+}
+.testimonial-sidebar {
+	overflow: hidden;
+}
+.well-sm {
+	padding: 9px;
+	border-radius: 3px;
+}
+.testimonial-sidebar .testi-text {
+	text-align: center;
+}
+.testimonial-sidebar .test-left {
+	float: left;
+	width: 30px;
+}
+.testimonial-sidebar .test-right {
+	width: 100%;
+}
+div.tab {
+	overflow: hidden;
+	border: 1px solid #ccc;
+	background-color: #f1f1f1;
+}
+/* Style the buttons inside the tab */
+div.tab button {
+	background-color: inherit;
+	float: left;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	padding: 14px 16px;
+	transition: 0.3s;
+	font-size: 17px;
+}
+/* Change background color of buttons on hover */
+div.tab button:hover {
+	background-color: #ddd;
+}
+/* Create an active/current tablink class */
+div.tab button.active {
+	background-color: #60b53c;
+	color: #fff;
+}
+/* Style the tab content */
+.tabcontent {
+	display: none;
+	padding: 6px 12px;
+	border: 1px solid #ccc;
+	border-top: none;
+}
+.hosting_tbl {
+	table-layout: fixed;
+	width: 100%;
+	height: auto;
+	border: 1px solid #ccc;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+.hosting_tbl tr td, .hosting_tbl tr th {
+	text-align: center;
+	padding: 8px 0px;
+	border: 1px solid #ccc;
+}
+.hosting_tbl tr th {
+	background: #2ca01c;
+	color: #fff;
+	font-size: 16px;
+}
+.hosting_tbl tr td strong {
+	color: #2ca01c;
+}
+.policy-wrapper a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+.policy-wrapper {
+	margin-top: 30px;
+color:
+}
+.box-service {
+	position: relative;
+	margin-bottom: 60px;
+}
+.img-box-wrap {
+	text-align: center;
+}
+.box-service img {
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+}
+.box-service h3 {
+	color: #000;
+	text-align: center;
+	margin: 0;
+	padding: 10px 0px;
+	font-size: 20px;
+	font-weight: normal;
+}
+.box-service p {
+	text-align: center;
+	font-size: 15px;
+}
+.img-box-wrap img {
+	height: 136px;
+	margin-bottom: 10px;
+}
+body {
+	font-family: 'latobold' !important;
+}
+.hostbooks-plan h2 {
+	margin: 20px 0px;
+	background: #2ca01c;
+	padding: 12px;
+	font-size: 24px;
+	color: #fff;
+	font-weight: normal;
+}
+.qbo_plans {
+	table-layout: fixed;
+	width: 99.5%;
+	margin: 10px auto;
+	border-collapse: collapse;
+	margin-bottom: 30px;
+}
+.error_table tr th:first-child {
+	background: none !important;
+}
+.qbo_plans tr th:first-child {
+	border: none;
+	background: none;
+	width: 20%;
+}
+.product__tick {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background: #2CA01C;
+}
+.qbo_plans tr td {
+	border: 1px solid #ccc;
+	text-align: center;
+	padding: 8px 0px;
+	vertical-align: top;
+	font-size: 12px;
+}
+.product__cross {
+	display: inline-block;
+	height: 15px;
+	width: 15px;
+	border-radius: 100%;
+	background: #f00;
+}
+.call_us_table h3 {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin: 0;
+}
+.call_us_table h3 a:hover {
+	color: #2ca01c;
+	text-decoration: none;
+}
+my-style.css:75 .call_us_table h3 a {
+ color: #2ca01c;
+ text-decoration: none;
+}
+span.green_txt {
+	color: green;
+}
+.error_table tr th {
+	background: #393a3d !important;
+	padding: 10px 0px !important;
+}
+.red_txt {
+	color: red;
+}
+.qbo_plans tr th {
+	background: #5c5c5c;
+	color: #fff;
+	padding: 5px 0px;
+	font-weight: bold;
+	font-size: 14px;
+}
+.qbo_plans tr td:first-child {
+	text-align: left;
+	padding-left: 5px;
+}
+my-style.css:72 .error_table tr td {
+ border: 1px solid #e1e1e1 !important;
+}
+style.css:380 .qbo_plans tr td {
+ border: 1px solid #ccc;
+ text-align: center;
+ padding: 8px 0px;
+ vertical-align: top;
+ font-size: 14px;
+}
+.qbo_plans tr th {
+	border: 1px solid #ccc;
+	text-align: center;
+	vertical-align: top;
+	font-size: 12px;
+}
+.toll_free_banner {
+	position: fixed;
+	top: 15px;
+	right: 0px;
+	background: #F77B01;
+	padding: 0px 0px 0px 0px;
+	color: #fff;
+	font-size: 24px;
+	z-index: 999999;
+	border-top-left-radius: 4px;
+	border-bottom-left-radius: 4px;
+	box-shadow: 0px 0px 5px #353535;
+	width: 335px;
+}
+.call_to_connect {
+	width: 40px;
+	float: left;
+	background: #3e944d;
+	height: 34px;
+	text-align: center;
+	display: block;
+}
+.toll_number {
+	padding-left: 10px;
+	float: left;
+	padding-right: 10px;
+}
+.call_to_connect:hover .toll_free_banner {
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+	transition: all 0.4s;
+	right: 0px;
+}
+.call_to_connect img {
+	width: 25px !important;
+}
+.toll_free_banner {
+	-webkit-animation: shift 4000ms 4 alternate;
+	-moz-animation: shift 4000ms 4 alternate;
+	-o-animation: shift 4000ms 4 alternate;
+	animation: shift 4000ms 4 alternate;
+}
+.right-shift {
+	right: -295px;
+}
+@-webkit-keyframes shift {
+ from {
+right:-295px;
+}
+ to {
+right:0px;
+}
+}
+@-o-keyframes shift {
+ from {
+right:-295px;
+}
+ to {
+right:0px;
+}
+}
+@-moz-keyframes shift {
+ from {
+right:-295px;
+}
+ to {
+right:0px;
+}
+}
+@keyframes shift {
+ from {
+right:-295px;
+}
+ to {
+right:0px;
+}
+}
+.logo_center {
+	width: 292px;
+	float: left;
+	margin-top: 29px;
+	padding: 5px 10px;
+	background: #393a3d;
+	color: #fff;
+}
+.logo_center a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 15px;
+}
+.logo_center a:hover {
+	text-decoration: none;
+	color: #fff;
+}
+header {
+	background: #fff;
+	height: 70px;
+}
+.logo_left {
+	width: 75px;
+	float: left;
+}
+.logo_right {
+	float: right;
+	padding-left: 10px;
+	padding-top: 0px;
+}
+.logo_right a {
+	color: #2ca01c;
+	text-decoration: none;
+}
+.logo_right a:hover {
+	text-decoration: none;
+}
+.logo_right .ProAdvisor {
+	font-size: 22px;
+	color: #000;
+	margin: 0;
+	padding: 0;
+}
+.logo_right .bookeeping {
+	margin: 0;
+	padding: 0;
+	background: #3e7e4a;
+	color: #fff;
+	font-size: 13px;
+	text-align: center;
+}
+.top-20 {
+	margin-top: 10px;
+}
+.banner {
+	background: url(../img/Home-Banner.jpg) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-cloud-host {
+	background: url(../img/CloudHosting.png) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-contact {
+	background: url(../img/Contact.png) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-plans {
+	background: url(../img/Plans-Banner.jpg) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-plans-1 {
+	background: url(../img/Plans-Banner-1.jpg) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-qbsuport {
+	background: url(../img/qbsupport-Banner.jpg) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-services {
+	background: url(../img/Plans-Banner.jpg) repeat-x;
+	width: 100%;
+	height: 300px;
+	background-position: top center;
+	background-size: cover;
+}
+.banner-support {
+	background: url(../img/support-banner.jpg) no-repeat;
+	width: 100%;
+	height: 500px;
+	background-position: top center;
+	background-size: cover;
+}
+.margin_40 {
+	margin: 40px 0px;
+}
+.head_1 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 22px;
+	font-family: 'latolight';
+	text-align: center;
+}
+.head_2 {
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 22px;
+	text-align: center;
+	line-height: 40px;
+	font-family: 'latolight';
+}
+.head_3 {
+	font-size: 22px;
+	font-weight: 500;
+	color: #fff;
+	margin: 0px 0px 30px 0px;
+	padding: 0;
+	font-family: 'latolight';
+	text-align: center;
+}
+.one_text {
+	font-size: 30px;
+	font-family: 'latobold';
+}
+.free_text {
+	font-size: 30px;
+	font-family: 'latobold';
+}
+.head_4 {
+	font-family: 'latolight';
+	font-size: 20px;
+	color: #fff;
+	text-align: center;
+}
+.contact_form {
+	position: absolute;
+	width: 404px;
+	height: auto;
+	background: #ebebeb;
+	box-shadow: 0px 0px 7px #333;
+	top: -45px;
+	padding: 10px 15px;
+	color: #505050;
+	border-radius: 4px;
+	z-index: 1;
+	right: 15%;
+}
+.interested {
+	margin: 0;
+	padding: 0;
+	font-size: 28px;
+	font-weight: bold;
+	color: #505050;
+}
+.to_qbo {
+	font-size: 14px;
+	font-style: italic;
+	color: #505050;
+	padding: 10px 0px 10px 0px;
+}
+.to_qbo span {
+	font-style: normal;
+	padding-left: 15px;
+}
+.from_qbo {
+	font-size: 14px;
+	font-style: italic;
+	color: #505050;
+	padding: 0px 0px 0px 0px;
+}
+.from_qbo span {
+	font-style: normal;
+	padding-left: 12px;
+}
+.from_qbo span input {
+	height: 20px;
+	width: 82%;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	font-style: italic;
+	color: #505050;
+	padding-left: 5px;
+}
+.form input {
+	width: 30%;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 0px 5px;
+	padding-left: 5px;
+	font-style: italic;
+}
+.my_phone input {
+	width: 59%;
+	height: 20px;
+	border: 1px solid #ccc;
+	margin: 0px 5px;
+	padding-left: 5px;
+	font-style: italic;
+}
+.button_submit {
+	background: url(../img/button_bg.png) repeat-x;
+	height: 52px;
+	border: none;
+	border-radius: 4px;
+	font-size: 22px;
+	color: #303030;
+	margin-left: 10px;
+	padding: 0px 30px;
+}
+.tollfree {
+	background: #f2f2f3;
+	color: #505050;
+	padding: 10px 0px;
+}
+.tollfree .uppertext {
+	font-size: 20px;
+	font-family: 'latobold';
+	margin: 0;
+	padding: 0;
+}
+.tollfree .toll_number {
+	font-size: 40px;
+	font-family: 'latobold';
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	line-height: 44px;
+}
+.center_content {
+	/*background: rgba(49,161,0,0.8);*/
+	padding-bottom: 30px;
+}
+.center_content h3 {
+	font-size: 30px;
+	color: #000;
+	text-align: center;
+	margin: 20px 0px;
+	padding: 0;
+}
+.center_content h4 {
+	font-size: 18px;
+	color: #000;
+	font-weight: bold;
+}
+.center_content p {
+	font-size: 14px;
+	color: #000;
+	font-weight: normal;
+	padding: 0px 20px;
+}
+.testimonial {
+	padding-bottom: 30px;
+	background: rgba(49,161,0,0.8);
+}
+.testimonial h3 {
+	font-size: 30px;
+	color: #fff;
+	text-align: center;
+	margin: 20px 0px;
+	padding: 0;
+}
+.testimonial_txt {
+	font-size: 13px;
+	color: #fff;
+}
+footer {
+	height: auto;
+	padding: 20px 0px;
+	background: #393a3d;
+}
+footer h3 {
+	font-size: 16px;
+	color: #fff;
+}
+footer p {
+	font-size: 12px;
+	color: #fff;
+	font-weight: normal;
+	font-family: 'latolight';
+}
+footer a {
+	color: #ffba00;
+}
+.keyword1 {
+	font-size: 12px;
+	font-family: 'latolight';
+	color: #fff;
+	font-style: italic;
+}
+.keyword2 {
+	font-size: 14px;
+	font-family: 'latolight';
+	color: #fff;
+	font-style: italic;
+}
+.keyword3 {
+	font-size: 18px;
+	font-family: 'latolight';
+	color: #2dbd57;
+	font-style: italic;
+}
+
+@media (max-width:1170px) {
+.banner-qbsuport {
+	background: url(../img/qbsupport-Banner-1170.jpg) repeat-x;
+	background-position: top center;
+}
+.banner-services {
+	background: url(../img/Banner-service-1170.jpg) repeat-x;
+	background-position: top center;
+}
+.banner-plans-1 {
+	background: url(../img/Banner-service-plans-1170.jpg) repeat-x;
+	background-position: top center;
+}
+	.banner-cloud-host{
+		background: url(../img/CloudHosting-1170.jpg) repeat-x;
+	background-position: top center;
+		
+	}
+	
+}
+
+@media (max-width:992px) {
+.contact_form {
+	position: relative;
+	width: 100%;
+	top: 40px;
+	right: 0px;
+	left: 0px;
+	margin-bottom: 60px;
+}
+.strip-login a {
+	color: #fff;
+	transition: all 300ms ease-out;
+	font-size: 12px;
+}
+}
+
+@media (max-width:768px) {
+.banner-services {
+	background: url(../img/Banner-service-768.jpg) repeat-x;
+	background-position: top center;
+}
+	.banner-strip {
+	display: none;
+}
+.banner-plans-1 {
+	background: url(../img/Banner-service-plans-768.jpg) repeat-x;
+	background-position: top center;
+}
+	.banner-cloud-host{
+		background: url(../img/CloudHosting-768.jpg) repeat-x;
+	background-position: top center;
+		
+	}
+.banner-qbsuport {
+	background: url(../img/qbsupport-Banner-768.jpg) repeat-x;
+	background-position: top center;
+}
+	.banner{background: url(../img/Home-Banner-768.jpg) repeat-x;
+	background-position: top center;}
+header {
+	background: #fff;
+	height: auto;
+	margin-bottom: 10px;
+}
+.menu-wrapper {
+	text-align: left;
+}
+.menu-wrapper a {
+	margin: 0px 0px;
+	font-size: 14px;
+}
+.banner-strip h3 {
+	padding: 5px 0px;
+	font-size: 16px;
+}
+.table-wrapper-plan {
+	width: 100%;
+	overflow-x: auto;
+}
+.table-wrapper-plan table {
+	table-layout: auto;
+}
+}
+
+@media (max-width:480px) {
+.contact_form {
+	display: none;
+}
+.banner-qbsuport {
+	background: url(../img/qbsupport-Banner-480.jpg) repeat-x;
+	background-position: top center;
+}
+.banner-services {
+	background: url(../img/Banner-service-480.jpg) repeat-x;
+	background-position: top center;
+}
+.banner-plans-1 {
+	background: url(../img/Banner-service-plans-480.jpg) repeat-x;
+	background-position: top center;
+}
+.banner-cloud-host{
+	background: url(../img/CloudHosting-480.jpg) repeat-x;
+	background-position: top center;
+		
+}
+	.banner{background: url(../img/Home-Banner-480.jpg) repeat-x;
+	background-position: top center;}
+	.banner-contact{background: url(../img/Contact-480.jpg) repeat-x;
+	background-position: top center;}
+
+}
+
+@media (max-width:420px) {
+.tollfree .uppertext {
+	font-size: 16px;
+}
+.tollfree .toll_number {
+	font-size: 28px;
+}
+}
+
+@media (max-width:380px) {
+.logo_right {
+	padding-left: 5px;
+	padding-top: 25px;
+}
+.logo_right .bookeeping {
+	font-size: 12px;
+}
+.logo_right .ProAdvisor {
+	font-size: 16px;
+}
+.head_4 {
+	font-size: 16px;
+}
+}

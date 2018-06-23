@@ -1,0 +1,5 @@
+<div class="container">
+Parent Component<br/>
+<app-cloud (valueChange)="display($event)"></app-cloud>
+{{count}}
+</div>

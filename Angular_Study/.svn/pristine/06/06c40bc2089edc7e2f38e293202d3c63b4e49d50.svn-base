@@ -1,0 +1,21 @@
+import { Input,Directive,ElementRef,HostListener} from '@angular/core';
+
+@Directive({
+  selector: '[appAttr]'
+})
+export class AttrDirective {
+  @Input() tColor;
+  constructor(private er:ElementRef) 
+  { 
+    er.nativeElement.style.color="red";
+    er.nativeElement.style.backgroundColor="green";
+  }
+  @HostListener('mouseover') onHover()
+  {
+    this.er.nativeElement.style.backgroundColor=this.tColor;
+  }
+  @HostListener('mouseleave') onMouseLeave()
+  {
+    this.er.nativeElement.style.backgroundColor="yellow";
+  }
+}

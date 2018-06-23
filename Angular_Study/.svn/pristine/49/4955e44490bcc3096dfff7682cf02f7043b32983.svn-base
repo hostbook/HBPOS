@@ -1,0 +1,51 @@
+<footer>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <h3>Disclaimer</h3>
+  <p align="justify">EazeBooks is an independent ProAdvisor firm to provide services for QuickBooks and other accounting software brands. Bookkeeping, accounting, payroll, tax filing and other related services offered by EazeBooks are independent of Intuit Inc. We provide services through trained team of certified pro-advisors, certified accountants and experienced specialists. The brand-names, trademarks, logos, company names used in our website belong to their respective owners and are for informational purposes only.</p>
+  </div>
+  <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+  <h3>Address</h3>
+  <p align="left">500 Westover Dr #59029 <br>
+  Sanford, NC 27330<br>
+  Call Us: (844) 666-6610 </p>
+  <a href="mailto:info@eazebooks.com">info@eazebooks.com</a>     
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+  <h3>Popular Tag</h3>
+  <p><span class="keyword1">Accounts,</span> <span class="keyword2"> Books,</span> <span class="keyword3"> Bookkeeping,</span>
+    <span class="keyword1"> Bookkeeper,</span>
+    <span class="keyword2"> Taxation,</span>
+    <span class="keyword3"> Tax,</span>
+    <span class="keyword1"> IRS,</span>
+    <span class="keyword2"> Internal Revenue Services,</span>
+    <span class="keyword3"> Financials,</span>
+    <span class="keyword1"> Profit,</span>
+    <span class="keyword2"> Loss,</span>
+    <span class="keyword3"> Revenue,</span>
+    <span class="keyword1"> Cash Flow,</span>
+    <span class="keyword2"> Fund Flow,</span>
+    <span class="keyword3"> Management,</span>
+    <span class="keyword1"> Accountant,</span>
+    <span class="keyword2"> Outstanding,</span>
+    <span class="keyword3"> Outsourcing,</span>
+    <span class="keyword1"> Outsource,</span>
+    <span class="keyword2"> State Tax,</span>
+    <span class="keyword3"> GST,</span>
+    <span class="keyword1"> Accounting,</span>
+    <span class="keyword2"> Payroll,</span>
+    <span class="keyword3"> Withholding,</span>
+    <span class="keyword1"> Tax Forms,</span>
+    <span class="keyword2"> Accounting Services,</span>
+    <span class="keyword3"> Capital,</span>
+    <span class="keyword1"> Expenses,</span>
+    <span class="keyword2"> Income</span>
+    </p>
+    <div class="policy-wrapper">
+                          <a href="refund-policy.html" target="_blank">Refund Policy</a> | <a href="privacy-policy.html" target="_blank">Privacy Policy</a> | <a href="terms-condition.html" target="_blank">Terms and conditions</a>
+                        </div>
+  </div>
+  </div>
+  </div>
+  </footer>

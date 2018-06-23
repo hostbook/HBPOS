@@ -1,0 +1,2 @@
+<input type="button" value="Click" (click)="abc()"/>
+<app-cloud [counter]="count"></app-cloud>

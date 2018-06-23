@@ -1,0 +1,22 @@
+import { Component, OnInit } from '@angular/core';
+import {NewsService} from '../services/news.service';
+@Component({
+  selector: 'app-contact',
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
+})
+export class ContactComponent implements OnInit {
+  myData={};
+  constructor(private ser:NewsService) { }
+  Contact()
+  {
+    this.ser.myContact(this.myData)
+    .subscribe(res=>
+    {
+      console.log(res)
+    })
+  }
+  ngOnInit() {
+  }
+
+}

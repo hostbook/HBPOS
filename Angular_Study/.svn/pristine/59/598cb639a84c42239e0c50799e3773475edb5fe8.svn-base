@@ -1,0 +1,14 @@
+<p>
+  <!-- {{10|limitTo:8}} -->
+  <!-- {{letNews|json}} -->
+</p>
+<h1 appAttr tColor="purple">Latest News</h1>
+<div *ngFor="let n of letNews|limitTo:5">
+  <h3>{{n.title}}</h3>
+  <p>
+    <img [src]="n.urlToImage" width=400 height=150/><br/>
+    {{n.description|substr:10}}<br/>
+    <a routerLink="/news-details/{{n.id}}">Read More</a>
+  </p>
+  <hr/>
+</div>

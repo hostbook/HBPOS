@@ -1,0 +1,25 @@
+import { Pipe, PipeTransform } from '@angular/core';
+
+@Pipe({
+  name: 'limitTo'
+})
+export class LimitPipe implements PipeTransform {
+
+  transform(value: any,arg:any): any {
+    if(arg)
+    {
+       let arr=[];
+       for(let i=0;i<arg;i++)
+       {
+         arr.push(value[i]);
+       }
+       return arr;
+    }
+    else
+    {
+      return value;
+    }
+    
+  }
+
+}

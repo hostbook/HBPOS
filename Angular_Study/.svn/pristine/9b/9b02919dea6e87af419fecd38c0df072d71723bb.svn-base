@@ -1,0 +1,11 @@
+<header>
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-20">
+  <div class="col-sm-2"><a href="index.html"><img src="assets/img/logo.svg" height="50" width="50"  alt=""/></a></div>
+  <div class="col-sm-8 menu-wrapper"><a href="qb-support.html">Support</a> | <a href="cloud-hosting.html">Cloud Hosting</a> | <a href="services.html">Services</a> | 
+    <a routerLink="/contact-us">Contact us</a></div>
+  <div class="col-sm-2 login-wrapper"><div class="strip-login"><a href="https://payment.eazebooks.com/Login.aspx" target="_blank">Login</a> | <a href="https://payment.eazebooks.com/Default.aspx" target="_blank">Register</a></div></div> </div>
+  </div>
+  </div>
+  </header>

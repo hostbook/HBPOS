@@ -1,0 +1,11 @@
+<footer>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-8"><p class="desclaimer">Disclaimer: We are an accounting and bookkeeping firm who provides services to manage our clients accounting books and payrolls. We do not advise or recommend any specific product to use for accounting purpose and request our clients to contact the product owner directly in case they need technical assistance.</p></div>
+			<div class="col-sm-4 copyright-section">
+				<p style="margin: 0; padding: 0;"><a href="privacy-policy.html" target="_blank">Privacy Policy</a> | <a href="refund-policy.html" target="_blank">Refund Policy</a> | <a href="terms-condition.html" target="_blank">Terms & Conditions</a></p>
+				<p>All rights reserved @<a href="index.html">bookkeepingexpertt.com</a></p>
+			</div>
+		</div>
+	</div>
+</footer>

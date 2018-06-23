@@ -1,0 +1,14 @@
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 logo"><a routerLink="index.html">Bookkeeping Expert</a><a href="tel:+18553856366" class="call-logo"><img src="images/call-icon.png" width="41" height="44" alt=""/></a></div>
+      <div class="col-sm-8">
+        <ul class="nav navbar-nav">
+          <li><a routerLink="">Home</a></li>
+          <li><a routerLink="/about">About us</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<router-outlet></router-outlet>

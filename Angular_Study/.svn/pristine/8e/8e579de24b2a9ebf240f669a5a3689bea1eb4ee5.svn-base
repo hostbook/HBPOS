@@ -1,0 +1,24 @@
+import { Component, OnInit } from '@angular/core';
+import {HttpClient} from '@angular/common/http';
+@Component({
+  selector: 'app-main',
+  templateUrl: './main.component.html',
+  styleUrls: ['./main.component.css']
+})
+export class MainComponent implements OnInit {
+  lNews;
+  letNews;
+  constructor(private http:HttpClient) { }
+  ngOnInit()
+  {
+    const url="https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=20d42b14a85243b7ae2531d20955bf68";
+    this.http.get(url)
+    .subscribe(res=>
+    {
+      console.log(res);
+      this.lNews=res;
+      this.letNews=this.lNews.articles;
+    })
+  }
+
+}

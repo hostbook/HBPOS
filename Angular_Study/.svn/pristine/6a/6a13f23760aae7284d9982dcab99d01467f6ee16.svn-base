@@ -1,0 +1,12 @@
+<p>
+  <!-- {{letNews|json}} -->
+</p>
+<h1>Latest News</h1>
+<div *ngFor="let n of letNews">
+  <h3>{{n.title}}</h3>
+  <p>
+    <img [src]="n.urlToImage" width=400 height=150/><br/>
+    {{n.description}}
+  </p>
+  <hr/>
+</div>

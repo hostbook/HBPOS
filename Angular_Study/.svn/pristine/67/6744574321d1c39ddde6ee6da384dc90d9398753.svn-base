@@ -1,0 +1,361 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>EazeBooks</title>
+<link href="css/mystyle.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.css.map">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.css.map">
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/jquery-ui.js"></script>
+<script>
+$(document).ready(function(){
+$(".toll_free_banner").click(function() {
+	$(this).toggleClass( "right-shift", 1000, "easeOutSine" );
+});
+});
+</script>
+<script src="js/bootstrap.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/npm.js"></script>
+
+
+</head>
+
+<body>
+<div class="toll_free_banner"><div class="call_to_connect"><img src="img/request_call.png"  alt="" title="Call To Connect"/></div><div class="toll_number">Toll Free: (844) 666-6610 </div></div>
+<header>
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 top-20">
+<div class="logo_left"><a href="index.html"><img src="img/logo.svg" height="70" width="70"  alt=""/></a></div>
+<div class="logo_right"><p class="ProAdvisor">Quick Bookkeeping Offers</p><p class="bookeeping">Bookkeeping & Accounting Services</p></div> </div>
+</div>
+</div>
+</header>
+<section class="banner">
+<div class="container">
+<div class="row">
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 margin_40">
+<p class="head_1">Your <span class="one_text">A</span>ffordable, <span class="one_text">S</span>ecure and <span class="one_text">R</span>eliable</p>
+<p class="head_2">Bookkeeping Partner</p>
+<p class="head_3">Get Tax Ready Account Books</p>
+<p class="head_4">
+Subscribe for <span class="one_text">1</span> month <span class="free_text">FREE</span> Trail
+</p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+<div class="contact_form">
+<p class="interested">I’m Interested</p>
+
+
+
+
+ <?php
+ ob_start();		
+if(isset($_POST['submit'])) {
+ 
+     $msg="";
+    $actual_link = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]"; 
+ 
+    // EDIT THE 2 LINES BELOW AS REQUIRED
+
+
+function getRealIpAddr()
+{
+if (!empty($_SERVER['HTTP_CLIENT_IP'])) //check ip from share internet
+{
+$ip=$_SERVER['HTTP_CLIENT_IP'];
+}
+elseif (!empty($_SERVER['HTTP_X_FORWARDED_FOR'])) //to check ip is pass from proxy
+{
+$ip=$_SERVER['HTTP_X_FORWARDED_FOR'];
+}
+else
+{
+$ip=$_SERVER['REMOTE_ADDR'];
+}
+return $ip;
+}
+
+$remoteip = getRealIpAddr();
+
+$qry_str = "?key=746a8960347f9581c654383ab91469b7b3f5b9ea5a82c03c60ce7da1dd1c3c2d&ip=".$remoteip;
+$ch = curl_init();
+
+// Set query data here with the URL
+curl_setopt($ch, CURLOPT_URL, 'http://api.ipinfodb.com/v3/ip-country/' . $qry_str);
+
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+//curl_setopt($ch, CURLOPT_TIMEOUT, '3');
+
+$content = trim(curl_exec($ch));
+curl_close($ch);
+
+
+
+$arr = explode(";",$content);
+$arr[3];
+
+
+
+$email_to = $_POST['email']; 
+ 
+  $email_subject = "Thanks ". $_POST['fname']." for your Eazebooks Accounting & Bookkeeping Query Details";
+ 
+   
+
+ 
+    $fname = $_POST['fname']; // required
+	
+    $lname = $_POST['lname']; // required 
+ 
+    $email_from = $_POST['email']; // required	
+	
+    $date = $_POST['date']; // required	
+	
+    $time = $_POST['time']; // required
+ 
+    $phone = $_POST['phone']; // not required
+ 
+    //$message = $_POST['message']; // required
+	 $zip = $_POST['zip']; // required
+ 
+    
+    function clean_string($string) {
+ 
+      $bad = array("content-type","bcc:","to:","cc:","href");
+ 
+      return str_replace($bad,"",$string);
+ 
+    }
+     
+	$email_message .= "<html><body>";
+$email_message .= '<img src="http://eazebooks.com/quickbooks-services/images/logo.svg" height="70" width="70" alt="Eazebooks" />';
+$email_message .='<br>';
+$email_message .='<br>';
+$email_message .= 'Dear '.$_POST['name'].'';
+$email_message .='<br>';
+$email_message .='Thanks for reaching out to Eazebooks. We have received your message.';
+
+$email_message .= '<table rules="all" style="border-color: #666;margin-top:20px;" cellpadding="10" border="1">';
+
+$email_message .= "<tr style='background: #eee;'><td><strong>Full Name :</strong> </td><td>".strip_tags($fname)." ".strip_tags($lname) . "</td></tr>"; 
+$email_message .= "<tr><td><strong>Email ID:</strong> </td><td>" . strip_tags($email_from) . "</td></tr>";
+
+$email_message .= "<tr style='background: #eee;'><td><strong>Phone:</strong> </td><td>" . strip_tags($phone) . "</td></tr>";
+
+
+
+$email_message .= "<tr><td><strong>Zip Code:</strong> </td><td>" . strip_tags($zip) . "</td></tr>";
+
+
+
+$email_message .= "<tr  style='background: #eee;'><td><strong>Date:</strong> </td><td>" . strip_tags($date) . "</td></tr>";
+
+
+$email_message .= "<tr style='background: #eee;'><td><strong>Time:</strong> </td><td>" . strip_tags($time) . "</td></tr>";
+
+//$email_message .= "<tr style='background: #eee;'><td><strong>Date to Call(mm/dd/yyyy):</strong> </td><td>" . strip_tags($datetocall) . "</td></tr>";
+
+//$email_message .= "<tr><td><strong>Company Name:</strong> </td><td>" . strip_tags($company) . "</td></tr>";
+
+//$email_message .= "<tr><td><strong>Message:</strong> </td><td>" . strip_tags($message) . "</td></tr>";
+$email_message .= "<tr  style='background: #eee;'><td><strong>Landing Page:</strong> </td><td>" .$_SERVER['HTTP_REFERER']. "</td></tr>";
+$email_message .= "</table>";
+$email_message .= "</body></html>"; 
+$email_message .= "<br>";
+$email_message .= "Secure Transaction:"."<br>";
+date_default_timezone_set("America/New_York");
+$email_message .= "This contact us form is provided in a secure environment and to help protect against fraud.";
+
+
+
+$email_message .= "IP address is: (".$_SERVER['REMOTE_ADDR'].") and Country: ".$arr[3]."  being logged on date/time(EST): " .date('d/m/Y:H:i:sa').".";
+   
+  
+// create email headers
+ 
+$headers .= 'MIME-Version: 1.0' . "\r\n";  
+$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";  
+
+$headers .= "From:"."info@eazebooks.com"." \r\n" .  
+       "Reply-To:"."info@eazebooks.com"." \r\n" .  
+	"Bcc: "."am@eazebooks.com"."\r\n".
+	 
+
+	  "X-Mailer: PHP/" . phpversion(); 
+ 
+mail($email_to, $email_subject, $email_message, $headers);
+
+?>
+
+<script>
+alert('Thanks for reaching out to Eazebooks. We have received your message');
+</script>
+
+<?php
+}
+ ob_end_flush();
+?>
+
+
+
+
+<form action="<?php  echo $_SERVER['PHP_SELF']; ?>" method="post">
+<p class="to_qbo"><strong>To:</strong> <span><span style="color:#327c00;">Eazebooks</span> (844) 666-6610 </span></p>
+<p class="from_qbo"><strong>From:</strong> <span>
+<input type="text" name="email" placeholder="your e-mail address" required></span></p>
+<p>Hello,</p>
+<p class="form">my name is<input type="text" name="fname" placeholder="First Name"><input type="text" name="lname" placeholder="Last Name" required>and</p>
+<p>I’m writing you today to get more solution for</p>
+<p>Bookkeeping & Accounting issues, My</p>
+<p class="form">zip code is <input type="text" placeholder="Zip Code" name="zip" required> and I would like to hear back</p>
+<p class="form">from you on <input type="date" placeholder="dd/mm/yyyy" name="date" s required> at <input type="time" placeholder="00:00:AM/PM" name="time" required>and</p>
+<p>know more about the great offers.</p>
+<p class="my_phone">Please call me back on <input type="text" name="phone" placeholder="My phone number" required></p>
+<p style="margin:20px 0px; margin:0 auto; text-align:center;"><span style="font-size:16px;"></span><input type="submit" name="submit" value="Connect Me Soon" class="button_submit"></p>
+
+</form>
+
+<?php //echo $msg; ?>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="tollfree">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<p class="uppertext">Call us on our Toll Free for best suited offer</p>
+<p class="toll_number">(844) 666-6610 </p>
+</div>
+</div>
+</div>
+</section>
+<section class="center_content">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+<h3>What do we Offer?</h3>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<p align="center"><img src="img/bookkeeping.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">Bookkeeping</h4>
+<p align="center">You’ll get an experienced accounting team to handle your bookkeeping.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<p align="center"><img src="img/Accounting.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">Accounting</h4>
+<p align="center">Reconciling your business financial records every month permit us to keep your ledger, bookkeeping, and taxes up-to-date.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+<p align="center"><img src="img/payroll.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">Payroll</h4>
+<p align="center">Our online payroll will keep your employees paid while handling your taxes.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 top-20" style="clear:both;">
+<p align="center"><img src="img/tax.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">Tax Preparation</h4>
+<p align="center">our consistent learning upgradation through  research makes  filing taxes simple & quick.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 top-20">
+<p align="center"><img src="img/cpa.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">CPA Services</h4>
+<p align="center">Get all the CPA activities done with the help of our expert team of certified CPAs.</p>
+</div>
+<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12 top-20">
+<p align="center"><img src="img/Strategic-Business-Planning.png" width="121" height="121"  alt=""/></p>
+<h4 align="center">Strategic Bussiness planning</h4>
+<p align="center">Develop staffing arrangements including recognizing the key players, aptitudes, states of mind and mastery expected to build the venture.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="testimonial">
+<div class="container">
+<div class="row">
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+<h3>Testimonials</h3>
+</div>
+
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+
+<h5>"Sandy Love O'Dell"</h5>
+<p class="testimonial_txt">
+Thank you Eazebooks & team for his support in installing QB. I think he did a fantastic job and kept me calm while he was handling my problem. </p>
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<h5>"Steen Frandsen"</h5>
+<p class="testimonial_txt">
+John administered the emergency expertly and Eazebooks did a masterful job of solving a very difficult problem - Bravo</p>
+</div>
+
+</div>
+</div>
+</section>
+<footer>
+<div class="container">
+<div class="row">
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<h3>Disclaimer</h3>
+<p align="justify"> Eazebooks.com is an independent company comprised of a team of certified accountants, Intuit� Certified QuickBooks� ProAdvisors�, tax consultants, and accounting and business experts. "Eazebooks" and its logo are registered trademarks of Eazebooks and not affiliated with any company. Intuit� and other company logos/marks are the property of their respective owners and used for reference and representation purposes only.. </p>
+
+</div>
+<div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+<h3>Address</h3>
+<p align="left">500 Westover Dr #59029 <br>
+Sanford, NC 27330<br>
+Call Us: (844) 666-6610 </p>
+<a href="mailto:info@eazebooks.com">info@eazebooks.com</a>     
+</div>
+<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+<h3>Popular Tag</h3>
+<p><span class="keyword1">Accounts,</span> <span class="keyword2"> Books,</span> <span class="keyword3"> Bookkeeping,</span>
+  <span class="keyword1"> Bookkeeper,</span>
+  <span class="keyword2"> Taxation,</span>
+  <span class="keyword3"> Tax,</span>
+  <span class="keyword1"> IRS,</span>
+  <span class="keyword2"> Internal Revenue Services,</span>
+  <span class="keyword3"> Financials,</span>
+  <span class="keyword1"> Profit,</span>
+  <span class="keyword2"> Loss,</span>
+  <span class="keyword3"> Revenue,</span>
+  <span class="keyword1"> Cash Flow,</span>
+  <span class="keyword2"> Fund Flow,</span>
+  <span class="keyword3"> Management,</span>
+  <span class="keyword1"> Accountant,</span>
+  <span class="keyword2"> Outstanding,</span>
+  <span class="keyword3"> Outsourcing,</span>
+  <span class="keyword1"> Outsource,</span>
+  <span class="keyword2"> State Tax,</span>
+  <span class="keyword3"> GST,</span>
+  <span class="keyword1"> Accounting,</span>
+  <span class="keyword2"> Payroll,</span>
+  <span class="keyword3"> Withholding,</span>
+  <span class="keyword1"> Tax Forms,</span>
+  <span class="keyword2"> Accounting Services,</span>
+  <span class="keyword3"> Capital,</span>
+  <span class="keyword1"> Expenses,</span>
+  <span class="keyword2"> Income</span>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+
+
+
+
+</body>
+</html>
